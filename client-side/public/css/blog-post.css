@@ -1,0 +1,16 @@
+body {
+  padding-top: 56px;
+}
+
+.horizontal {
+  display: inline-block;
+}
+
+.voteButton {
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.center {
+  margin: auto;
+}
