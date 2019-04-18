@@ -26,8 +26,8 @@ app.use(passport.session());
 // * passport for authentication
 passport.use(Strategy);
 
-app.use('/api/post', postRoute)
-// app.use('/api/post', authenticate, postRoute)
+// app.use('/api/post', postRoute)
+app.use('/api/post', authenticate, postRoute)
 app.use('/api/user', userRoute)
 
 app.listen(4000, console.log('Server up on port 4000..'))

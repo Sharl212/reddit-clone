@@ -25,9 +25,9 @@ router.post("/", async ({ body, user }, res) => {
     }
 })
 
-router.put("/:id", async ({ body, params }, res) => {
+router.put("/:id", async ({ body, params, user }, res) => {
     console.log(body)
-    const result = await votePost(params.id, body.type);
+    const result = await votePost(params.id, body.type, user._id);
     res.status(200).send(result);
 })
 
